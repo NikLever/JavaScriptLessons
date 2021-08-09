@@ -30,7 +30,7 @@
         console.log(`Inside myFunc name=${name}`);
   
         if (true){
-          let course = "The beginners guide to 3D web game development with ThreeJS";
+          let course = "JavaScript in 12 easy lessons";
           const section = 2;
           console.log(`course='${course}' inside if statement`);  
           console.log(`section=${section} inside if statement`);  
@@ -45,7 +45,7 @@
         }
       }
 
-      class game{
+      class App{
         constructor(name){
           this.days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
           this.name = name;
@@ -63,7 +63,7 @@
         showDays(){
           try{
             this.days.forEach( function(day){
-              console.log(`global name: '${name}' game name:'${this.name}' day:'${day}'`);
+              console.log(`global name: '${name}' app name:'${this.name}' day:'${day}'`);
             });
           }catch(err){
             console.error(`showDays: ${err.message}`);
@@ -88,10 +88,10 @@
         }
       }
       
-      const myGame = new game("Scope example");
-      myGame.showDays();
-      myGame.showDaysSelf();
-      myGame.showDaysArrow();
+      const myApp = new App("Scope example");
+      myApp.showDays();
+      myApp.showDaysSelf();
+      myApp.showDaysArrow();
     </script>
 </body>
 
